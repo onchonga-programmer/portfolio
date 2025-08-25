@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRENDA BOCHABERI PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="https://kit.fontawesome.com/c0b0dd45cb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body> 
+    <div id ="header">
+        <div class="container">
+            <nav>
+                <div class="nav-profile">
+                    <img src="images/bree.jpeg" alt="Brenda Bochaberi" class="nav-profile-img">
+                    <span class="nav-profile-name">Brenda Bochaberi</span>
+                </div>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">my projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>Brenda Bochaberi</span><br>  hybrid data Scientist </h1>
+            </div>
+        </div>  
+    </div>
+    <div id="about">    
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.jpeg" alt="Brenda Bochaberi">
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Learning</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="about-intro">
+                        <p class="intro-text">
+                            Hello! I'm <strong>Brenda Bochaberi</strong>, a passionate and dedicated Data Science student from Kenya, currently pursuing my Bachelor's degree in Computer Science at the Technical University of Mombasa.
+                        </p>
+                        <p class="intro-text">
+                            I specialize in transforming complex data into actionable insights through machine learning, data analysis, and innovative problem-solving. My goal is to become a hybrid data scientist with expertise in <strong>financial data science</strong>, combining technical skills with business acumen to drive meaningful impact.
+                        </p>
+                        <p class="intro-text">
+                            When I'm not analyzing data or building models, I enjoy exploring new technologies, contributing to open-source projects, and continuously expanding my knowledge in the ever-evolving field of data science.
+                        </p>
+                    </div>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            <i class="fa-solid fa-code"></i> Technical Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            <i class="fa-solid fa-briefcase"></i> Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            <i class="fa-solid fa-graduation-cap"></i> Education
+                        </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python Programming</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <p class="skill-desc">Data analysis, ML libraries (Pandas, NumPy, Scikit-learn)</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                                <p class="skill-desc">Supervised/Unsupervised learning, Model evaluation</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL & Databases</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                                <p class="skill-desc">Query optimization, Database design, ETL processes</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Data Visualization</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                                <p class="skill-desc">Matplotlib, Seaborn, Plotly, Dashboard creation</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <div class="experience-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span>2026 - Present</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Data Science Intern</h4>
+                                    <p>Gaining hands-on experience in real-world data science projects, working with industry datasets and developing practical solutions for business challenges.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span>2025 - 2026</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Industrial Attachment</h4>
+                                    <p>Completed industrial attachment program, applying theoretical knowledge to practical scenarios and developing professional skills in data analysis and machine learning.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span>2022 - 2026</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Computer Science Studies</h4>
+                                    <p>Pursuing Bachelor's degree with focus on data structures, algorithms, and specialized coursework in data science and machine learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fa-solid fa-university"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h4>Bachelor of Computer Science</h4>
+                                    <h5>Technical University of Mombasa</h5>
+                                    <span class="edu-date">2022 - Present</span>
+                                    <p>Specializing in Data Science with coursework in machine learning, statistics, database systems, and software engineering.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fa-solid fa-school"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h4>High School Certificate</h4>
+                                    <h5>Secondary Education</h5>
+                                    <span class="edu-date">2018 - 2021</span>
+                                    <p>Strong foundation in mathematics and sciences, which sparked my interest in data and analytical thinking.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fa-solid fa-certificate"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h4>Professional Development</h4>
+                                    <h5>Continuous Learning</h5>
+                                    <span class="edu-date">Ongoing</span>
+                                    <p>Regular participation in online courses, workshops, and certification programs to stay current with industry trends.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                        <a href="images/resume.docx" download class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I Can Do For You</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-bar"></i>
+                    <h2>Data Analysis & Insights</h2>
+                    <p>Transform your raw data into actionable insights with comprehensive analysis, visualization, and reporting to drive business decisions.</p>
+                        
+                    <a href="#">Get Started</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine Learning Solutions</h2>
+                    <p>Build custom ML models for prediction, classification, and automation to solve your business challenges and optimize processes.</p>
+                    <a href="#">Get Started</a>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Data Engineering & ETL</h2>
+                    <p>Design and implement robust data pipelines, ETL processes, and database solutions for seamless data flow and management.</p>
+                    
+                    <a href="#">Get Started</a>
+                      
+                </div>
+            </div>   
+        </div>
+    </div>  
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Featured Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Stock Prediction Model</h2>
+                    <p>Built a comprehensive stock prediction system using historical data, machine learning algorithms, and time series analysis to forecast market trends.</p>
+                    <a href="#">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Student Performance ETL Pipeline</h2>
+                    <p>Automated student performance ETL pipeline that extracts, transforms, and loads educational data for comprehensive analytics and reporting.</p>
+                    <a href="#">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="work">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Personalized Recommender System</h2>
+                    <p>Developed a hybrid recommender system with ETL pipeline and Django web framework for personalized content recommendations.</p>
+                    <a href="#">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+            <a href="https://github.com/onchonga-programmer" class="btn" target="_blank">See more on GitHub</a>
+        </div>
+    </div>  
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bochaberibrenda03@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0712651173</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://www.instagram.com/bree_bocha/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/onchonga-programmer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/brenda-bochaberi-ba15ba2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume.docx" download class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © <span id="current-year"></span> Brenda Bochaberi. Made with <i class="fa-regular fa-heart"></i> and lots of coffee.</p>
+        </div>
+    </div>
+
+                    
+</body>
+</html>    
