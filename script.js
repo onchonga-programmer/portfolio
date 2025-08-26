@@ -76,20 +76,45 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const typingText = document.querySelector('.header-text h1');
     if (typingText) {
-        const originalText = typingText.innerHTML;
-        typingText.innerHTML = '';
+        // Define the text content without HTML tags
+        const words = ["Hi,", "I'm", "Brenda", "Bochaberi", "hybrid", "data", "Scientist"];
+        const nameIndex = 3; // Index of "Bochaberi" to apply span styling
+        const lineBreakAfter = 3; // Add line break after "Bochaberi"
         
-        let i = 0;
-        function typeWriter() {
-            if (i < originalText.length) {
-                typingText.innerHTML = originalText.slice(0, i + 1);
-                i++;
-                setTimeout(typeWriter, 50);
+        typingText.innerHTML = '';
+        let currentWordIndex = 0;
+        
+        function typeNextWord() {
+            if (currentWordIndex < words.length) {
+                const word = words[currentWordIndex];
+                let wordToAdd = word;
+                
+                // Apply span styling to "Brenda Bochaberi"
+                if (currentWordIndex === 2) { // "Brenda"
+                    wordToAdd = '<span>' + word;
+                } else if (currentWordIndex === nameIndex) { // "Bochaberi"
+                    wordToAdd = word + '</span>';
+                }
+                
+                // Add the word to the display
+                if (currentWordIndex === 0) {
+                    typingText.innerHTML = wordToAdd;
+                } else {
+                    typingText.innerHTML += ' ' + wordToAdd;
+                }
+                
+                // Add line break after "Bochaberi"
+                if (currentWordIndex === lineBreakAfter) {
+                    typingText.innerHTML += '<br>';
+                }
+                
+                currentWordIndex++;
+                setTimeout(typeNextWord, 300); // Delay between words
             }
         }
         
         // Start typing animation after a short delay
-        setTimeout(typeWriter, 1000);
+        setTimeout(typeNextWord, 1000);
     }
     
     // ============ SCROLL ANIMATIONS ============

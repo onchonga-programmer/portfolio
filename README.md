@@ -23,13 +23,12 @@
 
 ## 🎯 About
 
-This is my personal portfolio website designed to showcase my skills, projects, and experience as a Data Science student at the Technical University of Mombasa. The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development while providing potential employers and collaborators with insight into my background and capabilities.
+This is my personal portfolio website designed to showcase my skills, projects, and experience as a Data Science student . The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development while providing potential employers and collaborators with insight into my background and capabilities.
 
 **Key Highlights:**
 - 🎓 Computer Science Student specializing in Data Science
 - 📊 Focus on Machine Learning and Financial Data Science
 - 🚀 Passionate about transforming data into actionable insights
-- 🌍 Based in Kenya with global aspirations
 
 ## ✨ Features
 
@@ -244,7 +243,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📞 Contact
 
-**Brenda Bochaberi** - Aspiring Data Scientist
+**Brenda Bochaberi** -  Data Scientist
 
 - 📧 **Email**: [bochaberibrenda03@gmail.com](mailto:bochaberibrenda03@gmail.com)
 - 📱 **Phone**: +254 712 651 173
