@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingText = document.querySelector('.header-text h1');
     if (typingText) {
         // Define the text content without HTML tags
-        const words = ["Hi,", "I'm", "Brenda", "Bochaberi", "hybrid", "data", "Scientist"];
-        const nameIndex = 3; // Index of "Bochaberi" to apply span styling
-        const lineBreakAfter = 3; // Add line break after "Bochaberi"
+        const words = ["Hi,", "I'm", "Brenda Bochaberi", "hybrid", "data", "Scientist"];
+        const nameIndex = 2; // Index of "Bochaberi" to apply span styling
+        const lineBreakAfter = 2; // Add line break after "Bochaberi"
         
         typingText.innerHTML = '';
         let currentWordIndex = 0;
