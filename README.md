@@ -4,50 +4,105 @@
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-## 📋 Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Sections Overview](#sections-overview)
-- [Customization](#customization)
-- [Performance](#performance)
-- [Browser Compatibility](#browser-compatibility)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [Contact](#contact)
-- [License](#license)
-
 ## 🎯 About
 
-This is my personal portfolio website designed to showcase my skills, projects, and experience as a Data Science student . The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development while providing potential employers and collaborators with insight into my background and capabilities.
+This is my personal portfolio website showcasing my skills, projects, and experience as a Data Science student at the Technical University of Mombasa. The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development.
 
 **Key Highlights:**
 - 🎓 Computer Science Student specializing in Data Science
 - 📊 Focus on Machine Learning and Financial Data Science
 - 🚀 Passionate about transforming data into actionable insights
+- 🌍 Based in Kenya with global aspirations
 
 ## ✨ Features
 
-### 🎨 Design & User Experience
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Interactive Elements**: Hover effects, smooth scrolling, and dynamic content
-- **Dark Theme**: Professional dark color scheme with accent colors
+- **Modern Design**: Clean, professional dark theme with teal/blue accents
+- **Responsive Layout**: Works perfectly on all devices
+- **Interactive Elements**: Smooth animations, hover effects, and typing animation
+- **Dynamic Content**: Skill progress bars, timeline animations
+- **Contact Form**: Working contact form with validation
+- **Social Integration**: Links to GitHub, LinkedIn, and Instagram
 
-### 🔧 Functionality
-- **Dynamic Navigation**: Smooth scrolling navigation with active states
-- **Profile Integration**: Professional profile image in navigation bar
-- **Interactive Tabs**: Skills, Experience, and Education tabs with smooth transitions
-- **Animated Progress Bars**: Visual skill level indicators with animation
-- **Contact Form**: Functional contact form with validation
-- **Social Media Integration**: Direct links to professional profiles
+## 🛠️ Technologies Used
 
-### 📱 Technical Features
-- **Mobile-First Approach**: Responsive design starting from mobile
+- **HTML5**: Semantic markup and modern structure
+- **CSS3**: Advanced styling with animations and responsive design
+- **JavaScript**: Interactive functionality and smooth animations
+- **Font Awesome**: Professional icons throughout the site
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── index.html             # Main HTML file
+├── style.css              # Main stylesheet
+├── script.js              # JavaScript functionality
+├── README.md              # Project documentation
+└── images/                # Assets directory
+    ├── background.jpeg    # Header background image
+    ├── bree.jpeg         # Profile/about image
+    └── resume.docx       # Downloadable resume
+```
+
+## � Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/onchonga-programmer/portfolio.git
+   cd portfolio
+   ```
+
+2. **Open the project**
+   ```bash
+   # Open directly in browser
+   open index.html
+   
+   # Or use a local server
+   python -m http.server 8000
+   # Then visit http://localhost:8000
+   ```
+
+3. **Start customizing**
+   - Edit `index.html` for content changes
+   - Modify `style.css` for styling updates
+   - Update `script.js` for functionality enhancements
+
+## 📄 Sections
+
+- **Header**: Professional introduction with typing animation
+- **About**: Personal story, skills, experience, and education with interactive tabs
+- **Services**: What I can do for clients (data analysis, ML, data engineering)
+- **Projects**: Featured work including stock prediction, ETL pipeline, and recommender system
+- **Contact**: Get in touch form and social media links
+
+## 🎨 Color Scheme
+
+- **Background**: `#0D1117` (GitHub dark theme)
+- **Text**: `#E5E7EB` (light gray)
+- **Accent 1**: `#00BFA6` (teal)
+- **Accent 2**: `#3B82F6` (blue for buttons/links)
+
+## 📞 Contact
+
+**Brenda Bochaberi** - Aspiring Data Scientist
+
+- 📧 **Email**: [bochaberibrenda03@gmail.com](mailto:bochaberibrenda03@gmail.com)
+- 📱 **Phone**: +254 712 651 173
+- 💼 **LinkedIn**: [Brenda Bochaberi](https://www.linkedin.com/in/brenda-bochaberi-ba15ba2a1)
+- 🐙 **GitHub**: [@onchonga-programmer](https://github.com/onchonga-programmer)
+- 📸 **Instagram**: [@bree_bocha](https://www.instagram.com/bree_bocha/)
+
+**Project Link**: [https://github.com/onchonga-programmer/portfolio](https://github.com/onchonga-programmer/portfolio)
+
+## � License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ **Star this repository if you found it helpful!**
+
+**Made with ❤️ and lots of coffee by Brenda Bochaberi**
 - **Performance Optimized**: Fast loading times and smooth animations
 - **SEO Friendly**: Semantic HTML structure and proper meta tags
 - **Accessibility**: Screen reader friendly with proper ARIA labels
