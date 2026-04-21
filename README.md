@@ -10,7 +10,7 @@ This is my personal portfolio website showcasing my skills, projects, and experi
 
 **Key Highlights:**
 - 🎓 Computer Science Student specializing in Data Science
-- 📊 Focus on Machine Learning and Financial Data Science
+- 📊 Focus on Machine Learning and Health Data Science
 - 🚀 Passionate about transforming data into actionable insights
 - 🌍 Based in Kenya with global aspirations
 
@@ -84,7 +84,7 @@ portfolio/
 
 ## 📞 Contact
 
-**Brenda Bochaberi** - Aspiring Data Scientist
+**Brenda Bochaberi** - Data Scientist
 
 - 📧 **Email**: [bochaberibrenda03@gmail.com](mailto:bochaberibrenda03@gmail.com)
 - 📱 **Phone**: +254 712 651 173
@@ -164,14 +164,14 @@ portfolio/
    ```
 
 3. **Start developing**
-   - Edit `index(1).html` for content changes
+   - Edit `index.html` for content changes
    - Modify `style.css` for styling updates
    - Update `script.js` for functionality enhancements
 
 ## 💻 Usage
 
 ### Viewing the Portfolio
-1. Open `index(1).html` in any modern web browser
+1. Open `index.html` in any modern web browser
 2. Navigate through sections using the navigation menu
 3. Interact with tabs in the About section
 4. Fill out the contact form to get in touch
@@ -340,4 +340,3 @@ SOFTWARE.
 
 ⭐ **Star this repository if you found it helpful!**
 
-**Made with ❤️ and lots of coffee by Brenda Bochaberi**
