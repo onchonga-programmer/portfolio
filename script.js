@@ -1,10 +1,6 @@
-// Portfolio Interactive JavaScript
-// Author: Brenda Bochaberi
 
-// Wait for DOM to load before executing scripts
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ============ NAVIGATION FUNCTIONALITY ============
     
     // Mobile menu toggle
     const sidemenu = document.getElementById("sidemenu");
@@ -77,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const typingText = document.querySelector('.header-text h1');
     if (typingText) {
         // Define the text content without HTML tags
-        const words = ["Hi,", "I'm", "Brenda Bochaberi", "hybrid", "data", "Scientist"];
-        const nameIndex = 2; // Index of "Bochaberi" to apply span styling
-        const lineBreakAfter = 2; // Add line break after "Bochaberi"
+        const words = ["Hi,", "I'm", "Brenda Bochaberi", "ML", "&", "Data Engineer"];
+        const nameIndex = 2; 
+        const lineBreakAfter = 2; 
         
         typingText.innerHTML = '';
         let currentWordIndex = 0;
@@ -193,14 +189,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ============ CONTACT FORM HANDLING ============
     
-    const contactForm = document.querySelector('form[name="submit-to-google-sheet"]');
+    const contactForm = document.querySelector('form[action="https://formspree.io/f/xnjblqqq"]');
     const msg = document.getElementById('msg');
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
+            // Get form data before submission
             const formData = new FormData(contactForm);
             const name = formData.get('Name');
             const email = formData.get('Email');
@@ -208,23 +202,19 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Basic validation
             if (!name || !email || !message) {
+                e.preventDefault();
                 showMessage('Please fill in all fields.', 'error');
                 return;
             }
             
             if (!isValidEmail(email)) {
+                e.preventDefault();
                 showMessage('Please enter a valid email address.', 'error');
                 return;
             }
             
             // Show loading message
             showMessage('Sending message...', 'loading');
-            
-            // Simulate form submission (replace with actual submission logic)
-            setTimeout(() => {
-                showMessage('Message sent successfully! Thank you for contacting me.', 'success');
-                contactForm.reset();
-            }, 2000);
         });
     }
     
@@ -232,11 +222,12 @@ document.addEventListener('DOMContentLoaded', function() {
         msg.innerHTML = text;
         msg.className = type;
         
-        // Clear message after 5 seconds
+        // Clear message after 5 seconds (or longer for success)
+        const delay = type === 'success' ? 3000 : 5000;
         setTimeout(() => {
             msg.innerHTML = '';
             msg.className = '';
-        }, 5000);
+        }, delay);
     }
     
     function isValidEmail(email) {
