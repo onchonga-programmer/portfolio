@@ -1,326 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRENDA BOCHABERI PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css?v=2">
-    <script src="https://kit.fontawesome.com/c0b0dd45cb.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Brenda Bochaberi – ML & Data Engineer</title>
+<meta name="description" content="Brenda Bochaberi, ML and data engineer building machine learning systems and data pipelines for healthcare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=IBM+Plex+Mono:wght@400;500&family=Kalam:wght@300;400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
-<body> 
-    <div id ="header">
-        <div class="container">
-            <nav>
-                <div class="nav-profile">
-                    <img src="images/bree.jpeg" alt="Brenda Bochaberi" class="nav-profile-img">
-                    <span class="nav-profile-name">Brenda Bochaberi</span>
-                </div>
-                
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">my projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                 <h1>Hi, I'm <span>Brenda Bochaberi</span><br> ML & Data Engineer</h1> 
-            </div>
-        </div>  
-    </div>
-    <div id="about">    
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/background.jpeg" alt="Brenda Bochaberi">
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>20+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Learning</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Dedication</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <div class="about-intro">
-                        <p class="intro-text">
-                            Hello! I'm <strong>Brenda Bochaberi</strong>, an undergraduate Computer Science student building production-grade ML and data engineering systems with a specialisation in the <strong>healthcare domain</strong>.
-                        </p>
-                        <p class="intro-text">
-                            I design end-to-end pipelines — from medallion architecture ETL to containerised ML deployments — using tools like Docker, MLflow, FastAPI, Apache Airflow, and XGBoost. My goal is to become an <strong>ML Engineer</strong>, combining rigorous model validation, explainability (SHAP), and scalable infrastructure.
-                        </p>
-                        <p class="intro-text">
-                            When I'm not building pipelines or training models, I contribute to open-source projects and explore emerging ML tooling to stay sharp in a fast-moving field.
-                        </p>
-                    </div>
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">
-                            <i class="fa-solid fa-code"></i> Technical Skills
-                        </p>
-                        <p class="tab-links" onclick="opentab('experience')">
-                            <i class="fa-solid fa-briefcase"></i> Experience
-                        </p>
-                        <p class="tab-links" onclick="opentab('education')">
-                            <i class="fa-solid fa-graduation-cap"></i> Education
-                        </p>
-                    </div>
+<body>
+<div class="paper" id="top">
 
-                    <div class="tab-contents active-tab" id="skills">
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Python & ML Libraries</span>
-                                    <span class="skill-level">Proficient</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                                <p class="skill-desc">Pandas, NumPy, Scikit-learn, XGBoost, SHAP, Statsmodels</p>
-                            </div>
+  <nav class="index" aria-label="Sections">
+    <h2>INDEX</h2>
+    <a href="#top" class="active"><b>00</b><span>The beginning</span></a>
+    <a href="#education"><b>01</b><span>Education &amp; certifications</span></a>
+    <a href="#projects"><b>02</b><span>Projects</span></a>
+    <a href="#experience"><b>03</b><span>Experience</span></a>
+    <a href="#toolkit"><b>04</b><span>My toolkit</span></a>
+    <a href="#contact"><b>05</b><span>Correspondence</span></a>
+    <p class="motto">Collect data.<br>Make sense of it.<br><u>Ship the model.</u></p>
+  </nav>
 
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">ML Engineering & MLOps</span>
-                                    <span class="skill-level">Intermediate</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="78"></div>
-                                </div>
-                                <p class="skill-desc">MLflow experiment tracking, model registry, FastAPI serving, SHAP explainability</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Data Engineering & Pipelines</span>
-                                    <span class="skill-level">Intermediate</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                                <p class="skill-desc">Apache Airflow, Medallion architecture, ETL/ELT, dbt, idempotent UPSERT design</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Containerisation & DevOps</span>
-                                    <span class="skill-level">Intermediate</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
-                                </div>
-                                <p class="skill-desc">Docker & Docker Compose multi-service setups, Linux (Ubuntu), Git/GitHub</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">SQL & Databases</span>
-                                    <span class="skill-level">Intermediate</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
-                                </div>
-                                <p class="skill-desc">PostgreSQL, query optimisation, database design, data quality tests</p>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Time Series & Forecasting</span>
-                                    <span class="skill-level">Intermediate</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="72"></div>
-                                </div>
-                                <p class="skill-desc">SARIMA, Holt-Winters, XGBoost with external regressors, Prophet, time-aware cross-validation</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-contents" id="experience">
-                        <div class="experience-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">
-                                    <span>2026 - Present</span>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Data Science Intern</h4>
-                                    <p>Gaining hands-on experience in real-world data science projects, working with industry datasets and developing practical solutions for business challenges.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-date">
-                                    <span>2025 - 2026</span>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Industrial Attachment</h4>
-                                    <p>Completed industrial attachment program, applying theoretical knowledge to practical scenarios and developing professional skills in data analysis and machine learning.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-date">
-                                    <span>2022 - 2026</span>
-                                </div>
-                                <div class="timeline-content">
-                                    <h4>Computer Science Studies</h4>
-                                    <p>Pursuing Bachelor's degree with focus on data structures and algorithms, and specialized coursework in data science and machine learning.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-contents" id="education">
-                        <div class="education-grid">
-                            <div class="education-item">
-                                <div class="education-icon">
-                                    <i class="fa-solid fa-university"></i>
-                                </div>
-                                <div class="education-content">
-                                    <h4>Bachelor of Computer Science</h4>
-                                    <h5>Technical University of Mombasa</h5>
-                                    <span class="edu-date">2022 - Present</span>
-                                    <p>Specializing in Data Science  and data engineering with coursework in machine learning, statistics, database systems, and software engineering.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="education-item">
-                                <div class="education-icon">
-                                    <i class="fa-solid fa-school"></i>
-                                </div>
-                                <div class="education-content">
-                                    <h4>High School Certificate</h4>
-                                    <h5>Secondary Education</h5>
-                                    <span class="edu-date">2018 - 2021</span>
-                                    <p>Strong foundation in mathematics and sciences, which sparked my interest in data and analytical thinking.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="education-item">
-                                <div class="education-icon">
-                                    <i class="fa-solid fa-certificate"></i>
-                                </div>
-                                <div class="education-content">
-                                    <h4>Professional Development</h4>
-                                    <h5>Continuous Learning</h5>
-                                    <span class="edu-date">Ongoing</span>
-                                    <p>Regular participation in online courses, workshops, and certification programs to stay current with industry trends.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-cta">
-                        <a href="#contact" class="btn btn-primary">Let's Work Together</a>
-                        <a href="images/resume.docx" download class="btn btn-secondary">
-                            <i class="fa-solid fa-download"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">What I Can Do For You</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>ML Model Development & Deployment</h2>
-                    <p>Build, train, and deploy production-ready ML models with MLflow tracking, FastAPI serving, and SHAP explainability — from prototype to containerised service.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>Data Pipeline Engineering</h2>
-                    <p>Design robust ETL/ELT pipelines with Airflow orchestration, medallion architecture, and data quality checks for reliable, scalable data flow.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-chart-bar"></i>
-                    <h2>Healthcare Data Science</h2>
-                    <p>Apply domain expertise in health data — disease surveillance, patient risk prediction, drug demand forecasting — with interpretable, audit-ready models.</p>
-                    <a href="#contact">Get Started</a>
-                </div>
-            </div>   
+  <main>
+    <header class="hero" id="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I’m</p>
+        <h1>Brenda Bochaberi</h1>
+        <p class="role">ML &amp; Data Engineer for healthcare.</p>
+        <p class="intro">I build machine learning systems and data pipelines for healthcare, taking public data all the way to an explainable model people can use. I’m finishing a BSc in Computer Science and aiming to work as an ML engineer.</p>
+        <div class="cta">
+          <a href="#projects">See my work →</a><span>/</span>
+          <a href="images/resume.docx" download>Resume ↗</a><span>/</span>
+          <a href="#contact">Say hello →</a>
         </div>
-    </div>  
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Featured Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h2>Pharmacy Drug Sales Forecasting System</h2>
-                    <p>Compared SARIMA, Holt-Winters, and XGBoost across 8 drugs. XGBoost achieved MAE 14.29 and R² 0.877 in production, with SHAP explainability and a Django-based serving layer. Resolved a persistent IndexError in SARIMA rolling forecasts via apply() with RangeIndex.</p>
-                    <a href="https://github.com/onchonga-programmer/pharmacy-forecasting-system">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-                <div class="work">
-                    <i class="fa-solid fa-database"></i>
-                    <h2>CDC Health Data Pipeline</h2>
-                    <p>Production-grade data engineering pipeline ingesting US mortality data from the CDC API. Implements Medallion architecture (Bronze → Silver → Gold) with Apache Airflow orchestration, idempotent UPSERT design, and automated data quality checks.</p>
-                    <a href="https://github.com/onchonga-programmer/cdc_data_pipeline">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-                <div class="work">
-                    <i class="fa-solid fa-brain"></i>
-                    <h2>Hospital Readmission Risk Predictor</h2>
-                    <p>8-service Docker Compose system with XGBoost model, MLflow experiment tracking, FastAPI prediction endpoint, and SHAP-powered explainability. End-to-end MLOps pipeline from feature engineering to model serving.</p>
-                    <a href="https://github.com/onchonga-programmer/readmission_prediction">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-                <div class="work">
-                    <i class="fa-solid fa-globe"></i>
-                    <h2>Global Malaria Burden Forecasting Pipeline</h2>
-                    <p>Cloud-native forecasting pipeline using Our World in Data's malaria datasets. Combines dbt transformations, XGBoost and Prophet models, time-aware cross-validation, and MLflow tracking — served via FastAPI and Streamlit with AWS S3/EC2 infrastructure.</p>
-                    <a href="https://github.com/onchonga-programmer">View Project <i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-             </div>
-            <a href="https://github.com/onchonga-programmer" class="btn" target="_blank">See more on GitHub</a>
-        </div>
-    </div>  
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>bochaberibrenda03@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>0712651173</p>
-                    <div class="social-icons">
-                        
-                        <a href="https://github.com/onchonga-programmer"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/brenda-bochaberi"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/resume.docx" download class="btn btn2">Download resume</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formspree.io/f/xnjblqqq"  method="POST" >
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © <span id="current-year"></span> Brenda Bochaberi. </p>
-        </div>
-    </div>
+      </div>
+      <figure class="polaroid">
+        <img src="images/bree.jpeg" alt="Portrait of Brenda Bochaberi">
+        <figcaption>Brenda B.</figcaption>
+      </figure>
+    </header>
 
-                    
+    <section id="education">
+      <div class="sh"><i>01</i><h2>Education &amp; Certifications</h2></div>
+      <p class="lede">Maths and sciences made me curious about data. A computer science degree gave me the tools to work with it.</p>
+      <div class="two">
+        <div>
+          <h3>EDUCATION</h3>
+          <ul class="timeline">
+            <li>
+              <span class="mono">2022 – present, graduating December 2026</span>
+              <b>BSc Computer Science</b>
+              <span class="mono">Technical University of Mombasa</span>
+              <p>Specialising in data science and data engineering, with coursework in machine learning, statistics, database systems and software engineering.</p>
+            </li>
+            <li>
+              <span class="mono">2018 – 2021</span>
+              <b>High School Certificate</b>
+              <span class="mono">Secondary education</span>
+              <p>A strong base in mathematics and the sciences, which sparked my interest in data and analytical thinking.</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>CERTIFICATIONS &amp; COURSES</h3>
+          <ul class="timeline">
+            <li>
+              <span class="mono">2026, in progress</span>
+              <b>ML Zoomcamp</b>
+              <span class="mono">DataTalks.Club</span>
+              <p>Hands-on machine learning engineering course with a graded midterm project.</p>
+            </li>
+            <li>
+              <span class="mono">Ongoing</span>
+              <b>Continuous learning</b>
+              <span class="mono">Online courses and workshops</span>
+              <p>Regular courses and certification programmes to keep up with ML and data engineering tools.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="sh"><i>02</i><h2>Projects</h2></div>
+      <p class="lede">Four projects, each taken from raw data to a working pipeline, model or service.</p>
+      <div class="cards">
+        <article class="card sticker">
+          <div class="meta mono"><span>Forecasting</span><span>XGBoost</span></div>
+          <h3>Pharmacy Drug Sales Forecasting</h3>
+          <p>Compared SARIMA, Holt-Winters and XGBoost across 8 drugs. XGBoost reached MAE 14.29 and R² 0.877, with SHAP explanations and a Django serving layer.</p>
+          <div class="tags"><span>XGBoost</span><span>SARIMA</span><span>SHAP</span><span>Django</span></div>
+          <a class="go" href="https://github.com/onchonga-programmer/pharmacy-forecasting-system" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card sticker">
+          <div class="meta mono"><span>Data engineering</span><span>CDC API</span></div>
+          <h3>CDC Health Data Pipeline</h3>
+          <p>Ingests US mortality data from the CDC API into a bronze, silver and gold medallion layout, with Airflow orchestration, idempotent upserts and automated quality checks.</p>
+          <div class="tags"><span>Airflow</span><span>PostgreSQL</span><span>Medallion</span></div>
+          <a class="go" href="https://github.com/onchonga-programmer/cdc_data_pipeline" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card sticker">
+          <div class="meta mono"><span>MLOps</span><span>8 services</span></div>
+          <h3>Hospital Readmission Risk Predictor</h3>
+          <p>An 8-service Docker Compose system: XGBoost model, MLflow experiment tracking, a FastAPI prediction endpoint and SHAP explanations, from feature engineering to serving.</p>
+          <div class="tags"><span>Docker</span><span>MLflow</span><span>FastAPI</span><span>SHAP</span></div>
+          <a class="go" href="https://github.com/onchonga-programmer/readmission_prediction" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card sticker">
+          <div class="meta mono"><span>Cloud forecasting</span><span>AWS</span></div>
+          <h3>Global Malaria Burden Forecasting</h3>
+          <p>Cloud-native pipeline on Our World in Data datasets: dbt transformations, XGBoost and Prophet with time-aware cross-validation, served through FastAPI and Streamlit.</p>
+          <div class="tags"><span>dbt</span><span>Prophet</span><span>Streamlit</span><span>S3 / EC2</span></div>
+          <a class="go" href="https://github.com/onchonga-programmer" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sh"><i>03</i><h2>Experience</h2></div>
+      <p class="lede">Taking what I built on my own and applying it to real datasets and business problems.</p>
+      <ul class="timeline wide">
+        <li>
+          <span class="mono">2026 – present</span>
+          <b>Data Science Intern</b>
+          <span class="mono">Datascience LTD</span>
+          <p>Working on machine learning projects with industry datasets and building practical solutions for business problems.</p>
+        </li>
+        <li>
+          <span class="mono">2025 – 2026</span>
+          <b>Industrial Attachment</b>
+          <span class="mono">Placement during my degree</span>
+          <p>Applied my coursework to practical work in data analysis and machine learning, and built professional skills on the job.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="toolkit">
+      <div class="sh"><i>04</i><h2>My Toolkit</h2></div>
+      <p class="lede">What I reach for, grouped by the job it does.</p>
+      <div class="tiles">
+        <div class="tile sticker"><b>Python &amp; ML</b><div class="chips"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Statsmodels</span></div></div>
+        <div class="tile sticker"><b>ML engineering</b><div class="chips"><span>MLflow tracking</span><span>Model registry</span><span>FastAPI serving</span><span>SHAP explainability</span></div></div>
+        <div class="tile sticker"><b>Data engineering</b><div class="chips"><span>Apache Airflow</span><span>Medallion architecture</span><span>ETL/ELT</span><span>dbt</span><span>Idempotent upserts</span></div></div>
+        <div class="tile sticker"><b>Containers &amp; cloud</b><div class="chips"><span>Docker</span><span>Docker Compose</span><span>Linux (Ubuntu)</span><span>Git</span><span>GitHub</span><span>AWS S3</span><span>AWS EC2</span></div></div>
+        <div class="tile sticker"><b>SQL &amp; databases</b><div class="chips"><span>PostgreSQL</span><span>Query optimisation</span><span>Database design</span><span>Data quality tests</span></div></div>
+        <div class="tile sticker"><b>Time series</b><div class="chips"><span>SARIMA</span><span>Holt-Winters</span><span>Prophet</span><span>XGBoost with external regressors</span><span>Time-aware cross-validation</span></div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sh"><i>05</i><h2>Correspondence</h2></div>
+      <p class="lede">Open to ML engineering and data engineering opportunities. Write a message here and it goes straight to my inbox.</p>
+      <div class="dispatch">
+        <h3>Send a dispatch</h3>
+        <form id="contact-form" action="https://formspree.io/f/xnjblqqq" method="POST">
+          <input type="hidden" name="_subject" value="New message from my portfolio">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="row">
+            <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <label>Message<textarea name="message" rows="6" required></textarea></label>
+          <button type="submit" class="send">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="links">
+          <a class="main" href="mailto:bochaberibrenda03@gmail.com">bochaberibrenda03@gmail.com</a>
+          <a href="https://github.com/onchonga-programmer" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/brenda-bochaberi" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot mono">
+      <span>© <span id="year">2026</span> Brenda Bochaberi</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+
+</div>
 </body>
-</html>    
+</html>
