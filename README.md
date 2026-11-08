@@ -1,18 +1,17 @@
 # 🌟 Brenda Bochaberi - Data Science Portfolio
 
-> A modern, interactive portfolio website showcasing my journey as an aspiring Data Scientist from Kenya.
+> A modern, interactive portfolio website showcasing my journey as aData Scientist .
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## 🎯 About
 
-This is my personal portfolio website showcasing my skills, projects, and experience as a Data Science student at the Technical University of Mombasa. The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development.
+This is my personal portfolio website showcasing my skills, projects, and experience as a Data Scienctist . The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development.
 
 **Key Highlights:**
 - 🎓 Computer Science Student specializing in Data Science
 - 📊 Focus on Machine Learning and Health Data Science
 - 🚀 Passionate about transforming data into actionable insights
-- 🌍 Based in Kenya with global aspirations
 
 ## ✨ Features
 
@@ -100,7 +99,6 @@ This project is licensed under the MIT License.
 
 ⭐ **Star this repository if you found it helpful!**
 
-**Made with ❤️ and lots of coffee by Brenda Bochaberi**
 - **Performance Optimized**: Fast loading times and smooth animations
 - **SEO Friendly**: Semantic HTML structure and proper meta tags
 - **Accessibility**: Screen reader friendly with proper ARIA labels
