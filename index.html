@@ -13,6 +13,12 @@
 <script src="script.js" defer></script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="deckle" x="-4%" y="-4%" width="108%" height="108%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
 <div class="paper" id="top">
 
   <nav class="index" aria-label="Sections">
@@ -31,15 +37,15 @@
       <div class="hero-text">
         <p class="hello">Hello, I’m</p>
         <h1>Brenda Bochaberi</h1>
-        <p class="role">ML &amp; Data Engineer for healthcare.</p>
-        <p class="intro">I build machine learning systems and data pipelines for healthcare, taking public data all the way to an explainable model people can use. I’m finishing a BSc in Computer Science and aiming to work as an ML engineer.</p>
+        <p class="role">ML &amp; Data Engineer .</p>
+        <p class="intro">I build machine learning systems and data pipelines , taking public data all the way to an explainable model people can use.</p>
         <div class="cta">
           <a href="#projects">See my work →</a><span>/</span>
           <a href="images/resume.docx" download>Resume ↗</a><span>/</span>
           <a href="#contact">Say hello →</a>
         </div>
       </div>
-      <figure class="polaroid">
+      <figure class="polaroid note"><i class="tape" aria-hidden="true"></i>
         <img src="images/bree.jpeg" alt="Portrait of Brenda Bochaberi">
         <figcaption>Brenda B.</figcaption>
       </figure>
@@ -53,7 +59,7 @@
           <h3>EDUCATION</h3>
           <ul class="timeline">
             <li>
-              <span class="mono">2022 – present, graduating December 2026</span>
+              <span class="mono">2022 -2026</span>
               <b>BSc Computer Science</b>
               <span class="mono">Technical University of Mombasa</span>
               <p>Specialising in data science and data engineering, with coursework in machine learning, statistics, database systems and software engineering.</p>
@@ -90,28 +96,28 @@
       <div class="sh"><i>02</i><h2>Projects</h2></div>
       <p class="lede">Four projects, each taken from raw data to a working pipeline, model or service.</p>
       <div class="cards">
-        <article class="card sticker">
+        <article class="card note"><i class="tape" aria-hidden="true"></i>
           <div class="meta mono"><span>Forecasting</span><span>XGBoost</span></div>
           <h3>Pharmacy Drug Sales Forecasting</h3>
           <p>Compared SARIMA, Holt-Winters and XGBoost across 8 drugs. XGBoost reached MAE 14.29 and R² 0.877, with SHAP explanations and a Django serving layer.</p>
           <div class="tags"><span>XGBoost</span><span>SARIMA</span><span>SHAP</span><span>Django</span></div>
           <a class="go" href="https://github.com/onchonga-programmer/pharmacy-forecasting-system" target="_blank" rel="noopener">View on GitHub</a>
         </article>
-        <article class="card sticker">
+        <article class="card note"><i class="tape" aria-hidden="true"></i>
           <div class="meta mono"><span>Data engineering</span><span>CDC API</span></div>
           <h3>CDC Health Data Pipeline</h3>
           <p>Ingests US mortality data from the CDC API into a bronze, silver and gold medallion layout, with Airflow orchestration, idempotent upserts and automated quality checks.</p>
           <div class="tags"><span>Airflow</span><span>PostgreSQL</span><span>Medallion</span></div>
           <a class="go" href="https://github.com/onchonga-programmer/cdc_data_pipeline" target="_blank" rel="noopener">View on GitHub</a>
         </article>
-        <article class="card sticker">
+        <article class="card note"><i class="tape" aria-hidden="true"></i>
           <div class="meta mono"><span>MLOps</span><span>8 services</span></div>
           <h3>Hospital Readmission Risk Predictor</h3>
           <p>An 8-service Docker Compose system: XGBoost model, MLflow experiment tracking, a FastAPI prediction endpoint and SHAP explanations, from feature engineering to serving.</p>
           <div class="tags"><span>Docker</span><span>MLflow</span><span>FastAPI</span><span>SHAP</span></div>
           <a class="go" href="https://github.com/onchonga-programmer/readmission_prediction" target="_blank" rel="noopener">View on GitHub</a>
         </article>
-        <article class="card sticker">
+        <article class="card note"><i class="tape" aria-hidden="true"></i>
           <div class="meta mono"><span>Cloud forecasting</span><span>AWS</span></div>
           <h3>Global Malaria Burden Forecasting</h3>
           <p>Cloud-native pipeline on Our World in Data datasets: dbt transformations, XGBoost and Prophet with time-aware cross-validation, served through FastAPI and Streamlit.</p>
@@ -144,12 +150,12 @@
       <div class="sh"><i>04</i><h2>My Toolkit</h2></div>
       <p class="lede">What I reach for, grouped by the job it does.</p>
       <div class="tiles">
-        <div class="tile sticker"><b>Python &amp; ML</b><div class="chips"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Statsmodels</span></div></div>
-        <div class="tile sticker"><b>ML engineering</b><div class="chips"><span>MLflow tracking</span><span>Model registry</span><span>FastAPI serving</span><span>SHAP explainability</span></div></div>
-        <div class="tile sticker"><b>Data engineering</b><div class="chips"><span>Apache Airflow</span><span>Medallion architecture</span><span>ETL/ELT</span><span>dbt</span><span>Idempotent upserts</span></div></div>
-        <div class="tile sticker"><b>Containers &amp; cloud</b><div class="chips"><span>Docker</span><span>Docker Compose</span><span>Linux (Ubuntu)</span><span>Git</span><span>GitHub</span><span>AWS S3</span><span>AWS EC2</span></div></div>
-        <div class="tile sticker"><b>SQL &amp; databases</b><div class="chips"><span>PostgreSQL</span><span>Query optimisation</span><span>Database design</span><span>Data quality tests</span></div></div>
-        <div class="tile sticker"><b>Time series</b><div class="chips"><span>SARIMA</span><span>Holt-Winters</span><span>Prophet</span><span>XGBoost with external regressors</span><span>Time-aware cross-validation</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>Python &amp; ML</b><div class="chips"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Statsmodels</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>ML engineering</b><div class="chips"><span>MLflow tracking</span><span>Model registry</span><span>FastAPI serving</span><span>SHAP explainability</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>Data engineering</b><div class="chips"><span>Apache Airflow</span><span>Medallion architecture</span><span>ETL/ELT</span><span>dbt</span><span>Idempotent upserts</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>Containers &amp; cloud</b><div class="chips"><span>Docker</span><span>Docker Compose</span><span>Linux (Ubuntu)</span><span>Git</span><span>GitHub</span><span>AWS S3</span><span>AWS EC2</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>SQL &amp; databases</b><div class="chips"><span>PostgreSQL</span><span>Query optimisation</span><span>Database design</span><span>Data quality tests</span></div></div>
+        <div class="tile note"><i class="tape" aria-hidden="true"></i><b>Time series</b><div class="chips"><span>SARIMA</span><span>Holt-Winters</span><span>Prophet</span><span>XGBoost with external regressors</span><span>Time-aware cross-validation</span></div></div>
       </div>
     </section>
 
