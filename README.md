@@ -9,8 +9,7 @@
 This is my personal portfolio website showcasing my skills, projects, and experience as a Data Scienctist . The portfolio demonstrates my technical abilities in data analysis, machine learning, and web development.
 
 **Key Highlights:**
-- 🎓 Computer Science Student specializing in Data Science
-- 📊 Focus on Machine Learning and Health Data Science
+- 🎓 Computer Science graduate specializing in data and machine learning
 - 🚀 Passionate about transforming data into actionable insights
 
 ## ✨ Features
@@ -38,9 +37,8 @@ portfolio/
 ├── script.js              # JavaScript functionality
 ├── README.md              # Project documentation
 └── images/                # Assets directory
-    ├── background.jpeg    # Header background image
     ├── bree.jpeg         # Profile/about image
-    └── resume.docx       # Downloadable resume
+    └── bree_cv.pdf       # Downloadable resume
 ```
 
 ## � Quick Start
@@ -85,7 +83,7 @@ portfolio/
 
 **Brenda Bochaberi** - Data Scientist
 
-- 📧 **Email**: [bochaberibrenda03@gmail.com](mailto:bochaberibrenda03@gmail.com)
+- 📧 **Email**: [breebochaberi@gmail.com](mailto:breebochaberi@gmail.com)
 - 💼 **LinkedIn**: [Brenda Bochaberi](https://www.linkedin.com/in/brenda-bochaberi-ba15ba2a1)
 - 🐙 **GitHub**: [@onchonga-programmer](https://github.com/onchonga-programmer)
 
@@ -125,14 +123,13 @@ This project is licensed under the MIT License.
 
 ```
 portfolio/
-├── index(1).html          # Main HTML file
+├── index.html          # Main HTML file
 ├── style.css              # Main stylesheet
 ├── script.js              # JavaScript functionality
 ├── README.md              # Project documentation
 └── images/                # Assets directory
-    ├── background.jpeg    # Header background image
     ├── bree.jpeg         # Profile/about image
-    └── resume.docx       # Downloadable resume
+    └── bree_cv.pdf       # Downloadable resume
 ```
 
 ## 🚀 Installation
@@ -296,7 +293,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 **Brenda Bochaberi** -  Data Scientist
 
-- 📧 **Email**: [bochaberibrenda03@gmail.com](mailto:bochaberibrenda03@gmail.com)
+- 📧 **Email**: [breebochaberi@gmail.com](mailto:breebochaberi@gmail.com)
 - 📱 **Phone**: +254 712 651 173
 - 💼 **LinkedIn**: [Brenda Bochaberi](https://www.linkedin.com/in/brenda-bochaberi-ba15ba2a1)
 - 🐙 **GitHub**: [@onchonga-programmer](https://github.com/onchonga-programmer)
