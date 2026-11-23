@@ -216,6 +216,7 @@ portfolio/
 --background: #000800;       /* Dark background */
 --text-primary: #fff;        /* White text */
 --text-secondary: #ccc;      /* Light gray text */
+
 ```
 
 ### Typography
@@ -297,8 +298,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 - 📱 **Phone**: +254 712 651 173
 - 💼 **LinkedIn**: [Brenda Bochaberi](https://www.linkedin.com/in/brenda-bochaberi-ba15ba2a1)
 - 🐙 **GitHub**: [@onchonga-programmer](https://github.com/onchonga-programmer)
-- 📸 **Instagram**: [@bree_bocha](https://www.instagram.com/bree_bocha/)
-
 **Project Link**: [https://github.com/onchonga-programmer/portfolio](https://github.com/onchonga-programmer/portfolio)
 
 ## 📜 License
