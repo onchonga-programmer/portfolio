@@ -2,7 +2,7 @@
 
 > A modern, interactive portfolio website showcasing my journey as aData Scientist .
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-b3202a) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## 🎯 About
 
@@ -14,7 +14,7 @@ This is my personal portfolio website showcasing my skills, projects, and experi
 
 ## ✨ Features
 
-- **Modern Design**: Clean, professional dark theme with teal/blue accents
+- **Modern Design**: Clean, professional light lavender theme with red accents
 - **Responsive Layout**: Works perfectly on all devices
 - **Interactive Elements**: Smooth animations, hover effects, and typing animation
 - **Dynamic Content**: Skill progress bars, timeline animations
@@ -74,10 +74,15 @@ portfolio/
 
 ## 🎨 Color Scheme
 
-- **Background**: `#0D1117` (GitHub dark theme)
-- **Text**: `#E5E7EB` (light gray)
-- **Accent 1**: `#00BFA6` (teal)
-- **Accent 2**: `#3B82F6` (blue for buttons/links)
+- **Primary Lavender**: `--p1: #e4dbf7`
+- **Secondary Lavender**: `--p2: #ece4fa`
+- **Primary Text**: `--ink: #2a2733`
+- **Muted Text**: `--mute: #645e71`
+- **Border/Rule**: `--rule: #c2b3e2`
+- **Accent**: `--acc: #b3202a`
+- **Tile**: `--tile: #f8f5fe`
+- **Tag**: `--tag: #e2d8f6`
+- **Highlight**: `--hl: #dacdf1`
 
 ## 📞 Contact
 
@@ -210,12 +215,16 @@ portfolio/
 
 ### Color Scheme
 ```css
-/* Primary Colors */
---primary-color: #ff004f;    /* Accent pink */
---secondary-color: #ffb300;  /* Accent orange */
---background: #000800;       /* Dark background */
---text-primary: #fff;        /* White text */
---text-secondary: #ccc;      /* Light gray text */
+/* Primary Colors from style.css */
+--p1: #e4dbf7;      /* Primary lavender */
+--p2: #ece4fa;      /* Secondary lavender */
+--ink: #2a2733;     /* Primary text */
+--mute: #645e71;    /* Muted text */
+--rule: #c2b3e2;    /* Borders */
+--acc: #b3202a;     /* Accent red */
+--tile: #f8f5fe;    /* Tile background */
+--tag: #e2d8f6;     /* Tag background */
+--hl: #dacdf1;      /* Highlight */
 
 ```
 
